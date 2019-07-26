@@ -1,3 +1,9 @@
+# Formik Presentation
+
+#### _Or - how I learned to love the form_
+
+- [Formik Docs](https://jaredpalmer.com/formik/docs/api/formik)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
