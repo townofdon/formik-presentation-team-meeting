@@ -8,17 +8,12 @@ const Index = () => {
   return (
     <>
       <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
+      <h2>Formik</h2>
+      <p className="mb-0">
+        <a href="#scroll-to-example" className="text-reset">
+          <i className="fas fa-chevron-down"></i>
+        </a>
       </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
     </>
   );
 }

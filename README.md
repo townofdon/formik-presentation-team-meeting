@@ -1,6 +1,6 @@
 # Formik Presentation
 
-#### _Or - how I learned to love the form_
+## _Or - how I learned to love the form_
 
 - [Formik Docs](https://jaredpalmer.com/formik/docs/api/formik)
 

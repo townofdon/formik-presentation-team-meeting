@@ -19,8 +19,39 @@
   color: white;
 }
 
+.App-footer {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.Fancy-title {
+  font-family: Georgia;
+  font-style: italic;
+  padding: 1em;
+  background: aliceblue;
+}
+
+.Example-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+blockquote {
+  background: #ededed;
+  padding: 1em;
 }
 
 nav ul {

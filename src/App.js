@@ -3,11 +3,8 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 import insertStyleTag from './utils/dom/insert-style-tag';
 
+import navLinks from './nav-links';
 import HeaderIndex from './headers/HeaderIndex';
-import HeaderExample01 from './headers/HeaderExample01';
-
-import Index from './pages/Index';
-import Example01 from './pages/Example01';
 
 import './App.css';
 
@@ -22,26 +19,39 @@ function App() {
         <header className="App-header">
           <nav>
             <ul>
-              <li>
-                <NavLink activeClass="active" exact to="/">Home</NavLink>
-              </li>
-              <li>
-                <NavLink activeClass="active" exact to="/example-one/">Ejemple One</NavLink>
-              </li>
-              <li>
-                <NavLink activeClass="active" exact to="/example-two/">Ejemple Two</NavLink>
-              </li>
+              {navLinks.map((navLink, index) => (
+                <li key={index}>
+                  <NavLink activeClassName="active" exact to={navLink.path}>
+                    {navLink.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </nav>
           <div>
-            <Route path="/" exact component={HeaderIndex} />
-            <Route path="/example-one" component={HeaderExample01} />
+            {navLinks.map((navLink, index) => (
+              <Route key={index} path={navLink.path} exact component={navLink.componentHeader || HeaderIndex} />
+            ))}
           </div>
         </header>
         <div>
-          <Route path="/" exact component={Index} />
-          <Route path="/example-one" component={Example01} />
+          {navLinks.map((navLink, index) => navLink.componentBody ? (
+            <Route key={index} path={navLink.path} exact component={navLink.componentBody} />
+          ) : null)}
         </div>
+        <footer className="App-footer p-4">
+          <nav>
+            <ul className="mb-0">
+              {navLinks.map((navLink, index) => (
+                <li key={index}>
+                  <NavLink activeClassName="active" exact to={navLink.path}>
+                    {navLink.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </footer>
       </div>
     </Router>
   );
