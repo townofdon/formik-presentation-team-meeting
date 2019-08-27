@@ -4,6 +4,44 @@
 
 - [Formik Docs](https://jaredpalmer.com/formik/docs/api/formik)
 
+Directions:
+
+- `npm i`
+- `npm start`
+
+Then open up following files in your code editor for each section:
+
+#### Example One
+
+- [Simple Form](./src/resources/Example01/01FormSimple.js)
+- [NameSpaced Form](./src/resources/Example01/02FormNameSpaced.js)
+- [Form With Basic Error Handling](./src/resources/Example01/03FormErrorHandling.js)
+- [Form With Better Error Handling](./src/resources/Example01/04FormErrorHandlingMoBetter.js)
+- [Final DIY Class-Component Form](./src/resources/Example01/05FormFinal.js)
+
+#### Example Two
+
+- [Form Built using Functional Component and React Hooks](./src/resources/Example02/06FormHooks.js)
+
+#### Example Three
+
+- [Form Built using Formik](./src/resources/Example03/07FormFormik.js)
+
+#### Example Four (BONUS)
+
+- [Form Built using Formik - tweaked to meet our needs](./src/resources/Example04/08FormFormikExtras.js)
+
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
